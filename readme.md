@@ -1,10 +1,11 @@
 ## In course:
-1. Exam 66(1h)
-2. Exam 68(1.5h)
-3. Coursework 70
-4. Preparation 67(App)
-5. Preparation 24(AI)
-6. Preparation 142(ML)
+1. Coursework 66, By Jan/11
+2. Exam 66(1h)
+3. Exam 68(1.5h)
+5. Coursework 70, By Jan/13
+6. Preparation 67(App)
+7. Preparation 24(AI)
+8. Preparation 142(ML)
 
 ## Outside course:
 ## 1. 61B
