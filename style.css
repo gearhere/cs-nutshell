@@ -6,6 +6,7 @@ body {
     background-color: rgb(102, 13, 13);
     margin: auto;
     /* color: #eee9dc; */
+    opacity: 0.9;
 }
 
 .repo {
@@ -35,10 +36,9 @@ div {
     display: flex;
 }
 
-.plan {
+.topic {
     width: 45%;
     margin-left: 10%;
-    /* background-color: aqua; */
 }
 
 .middle {
@@ -46,14 +46,19 @@ div {
 }
 
 .board {
-    display:flex;
+    display: flex-box;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 .section {
-    width: 50%;
+    width: 80%;
+    margin-bottom: 3%;
     padding: 3%;
+    border-width: 3px;
+    border-radius: 0px;
+    border-color: rgb(69, 142, 206);
+    border-style: solid;
 }
 
 .splitline {
@@ -68,20 +73,20 @@ div {
     background-color: rgba(200, 201, 183, 0.918);
 }
 
+.practice {
+    background-color: rgb(231, 231, 209);
+}
+
+.career {
+    background-color: rgba(214, 238, 224, 0.836);
+}
+
 .app {
     background-color: bisque;
 }
 
-.practice {
-    background-color: rgb(128, 119, 102);
-}
-
 .ml {
     background-color: rgba(245, 245, 220, 0.897);   
-}
-
-.career {
-    background-color: rgba(168, 163, 138, 0.836);
 }
 
 .exam {
@@ -202,7 +207,7 @@ background: #f98262;
 .radio:checked ~ .content {
 max-height: 180px;
 border-color: #eee9dc;
-margin-right: 30%;
+margin-right: 10%;
 transform: translateX(20px);
 transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }

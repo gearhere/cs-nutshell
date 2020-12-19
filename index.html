@@ -4,30 +4,65 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/ico" href="image/favicon.ico"/>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.0.0/dist/echarts.min.js"></script>
     <title>CSNut</title>
 </head>
 
 <body>
     <div class="repo">
         <a href="https://github.com/gearhere/cs-nutshell">
-            <font color="white">
-                <i class="fa fa-github" style="font-size:30px"></i>&nbsp;&nbsp;CS in a Nutshell</font>
+            <font color="white" size="6">
+                <i class="fa fa-github" style="font-size:64px"></i>&nbsp;&nbsp;CS in a Nutshell</font>
         </a>  
     </div>
 
     <div class="winterplan">
-        <h1><font color='white'>❄ Winter Break 👨‍💻</font></h1>
+        <h1><font color='white'>👨‍💻</font></h1>
     </div>
     <div class="wall">
-        <div class="plan">
+        <div class="topic">
             <div class="board">
                 <div class="section datastructure">
                     <h2>Data Structure</h2>
                     <ul>
                         <li>
-                            <a href="https://sp18.datastructur.es/">CS61B</a>
+                            Course: <a href="https://sp18.datastructur.es/"><b>CS61B</b></a>
                         </li>
-                        <li><a href="https://github.com/bat67/Fundamentals-of-Python-Data-Structures">Fundamentals Of Python: Data Structures</a></li>
+                        <li>
+                            Book: <a href="https://github.com/bat67/Fundamentals-of-Python-Data-Structures"><b><i>Fundamentals Of Python: Data Structures</i></b></a></li>
+                    </ul>
+                </div>
+
+                <div class="section practice">
+                    <h2>Practice</h2>
+                    <ul>
+                        <li>
+                            Programming Language: <a href="https://www.codewars.com/"><b>CodeWars</b></a>
+                        </li>
+                        <li>
+                            Algorithm: <a href="https://leetcode-cn.com/"><b>LeetCode</b></a>
+                        </li>
+                        <li>
+                            Front-end: learning-by-doing on <a href="https://github.com/gearhere/cs-nutshell/tree/gh-pages"><b>this page</b></a>
+                        </li>
+                        <li>
+                            DA + ML: <a href="https://learn.datacamp.com/projects"><b>DataCamp real-world projects</b></a>
+                        </li>
+                        <li>
+                            Framework: side proj + Flask/Django
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section career">
+                    <h2>Career</h2>
+                    <ul>
+                        <li>
+                            <a href="https://careers.google.com/jobs/"><b>Job Description Research</b></a>
+                        </li>
+                        <li>
+                            Resume
+                        </li>
                     </ul>
                 </div>
 
@@ -35,24 +70,10 @@
                     <h2>App Design</h2>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/learning">Linkedin Learning</a></li>
-                        <li>
-                            <a href="https://developer.mozilla.org/zh-CN/">MDN Web Docs</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="splitline"></div>
-
-            <div class="board">
-                <div class="section practice">
-                    <h2>Practice</h2>
-                    <ul>
-                        <li>
-                            <a href="https://www.codewars.com/">CodeWars</a>
+                            <a href="https://www.linkedin.com/learning"><b>Linkedin Learning</b></a>
                         </li>
                         <li>
-                            <a href="https://leetcode-cn.com/">LeetCode</a>
+                            <a href="https://developer.mozilla.org/zh-CN/"><b>MDN Web Docs</b></MDN></a>
                         </li>
                     </ul>
                 </div>
@@ -61,28 +82,18 @@
                     <h2>Machine Learning</h2>
                     <ul>
                         <li>
-                            <a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Linear Algebra</a>
+                            <a href="http://cs229.stanford.edu/section/cs229-linalg.pdf"><b>Linear Algebra</b></a>;
+                            Calculus;
+                            <a href="http://cs229.stanford.edu/section/cs229-prob.pdf"><b>Probability</b></a>
                         </li>
                         <li>
-                            Calculus
+                            Notebook 00 [Numpy][Pandas][Scikit-learn]
                         </li>
                         <li>
-                            <a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Probability</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="splitline"></div>
-    
-            <div class="board">
-                <div class="section career">
-                    <h2>Career</h2>
-                    <ul>
-                        <li>
-                            <a href="https://careers.google.com/jobs/">Job Description Research</a>
+                            Latex: <a href="https://moodle.ucl.ac.uk/"><b>enrichment</b></a>
                         </li>
                         <li>
-                            Resume
+                            <a href="https://www.coursera.org/learn/machine-learning"><b>Coursera Stanford ML</b></a>
                         </li>
                     </ul>
                 </div>
@@ -94,8 +105,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="splitline"></div>
-    
+
+            <!-- <div class="splitline"></div> -->
+            <!-- <div id="main" class="kg" style="width:650px;height:400px; margin-top: 50px;"></div>
+            <script type="text/javascript">
+                document.write("<scr"+"ipt src='kg.js'></scr"+"ipt>");
+            </script> -->
         </div>
 
         <div class="middle"></div>
@@ -106,15 +121,13 @@
                 <li class='work'>
                     <input class='radio' id='work1' name='works' type='radio' checked>
                     <div class="relative">
-                        <label for='work1'>Week 1</label>
+                        <label for='work1'>WB Week 1</label>
                         <span class='date'>2020.12.18</span>
                         <span class='circle'></span>
                     </div>
                     <div class='content'>
                         <p>
-                            ⬜ CS61B<br>
-                            ⬜ Python Datastructure<br>
-                            ⬜ html + css
+                            🌱 TBD
                         </p>
                     </div>
                 </li>
@@ -122,14 +135,12 @@
                 <li class='work'>
                     <input class='radio' id='work2' name='works' type='radio'>
                     <div class="relative">
-                        <label for='work2'>Week2</label>
+                        <label for='work2'>WB Week2</label>
                         <span class='date'>2020.12.26</span>
                         <span class='circle'></span>
                     </div>
                     <div class='content'>
                         <p>
-                            ⬜ Leetcode Plan & Repo<br>
-                            ⬜ javascripte
                         </p>
                     </div>
                 </li>
@@ -137,13 +148,12 @@
                 <li class='work'>
                     <input class='radio' id='work3' name='works' type='radio'>
                     <div class="relative">
-                        <label for='work3'>Week3</label>
+                        <label for='work3'>WB Week3</label>
                         <span class='date'>2021.01.02</span>
                         <span class='circle'></span>
                     </div>
                     <div class='content'>
                         <p>
-                            ⬜ TBD<br>
                         </p>
                     </div>
                 </li>
@@ -151,8 +161,126 @@
                 <li class='work'>
                     <input class='radio' id='work4' name='works' type='radio'>
                     <div class="relative">
-                        <label for='work4'>Term 2</label>
-                        <span class='date'>2020.01.11</span>
+                        <label for='work4'>Term 2 begins<br>💯 COMP0066 Proj</label>
+                        <span class='date'>2021.01.11</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work5' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work5'>💯 COMP0070 CWK 2</label>
+                        <span class='date'>2021.01.13</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work6' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work6'>💯 COMP0066 MCQ</label>
+                        <span class='date'>2021.01.22</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work9' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work9'>🎓 <font color="yellow">IXN/Research Proposals</font></label>
+                        <span class='date'>2021.01</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work10' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work10'>📝 <font color="yellow">Summer Intern Application begins</font></label>
+                        <span class='date'>2021.02</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work11' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work11'>💯 COMP0142 CWK 1</label>
+                        <span class='date'>2021.02.09</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work12' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work12'>💯 COMP0142 Test 1</label>
+                        <span class='date'>2021.02.25</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work13' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work13'>💯 COMP0142 CWK 2</label>
+                        <span class='date'>2021.03.24</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                <li class='work'>
+                    <input class='radio' id='work14' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work14'>💯 COMP0142 Test 2</label>
+                        <span class='date'>2021.03.25</span>
+                        <span class='circle'></span>
+                    </div>
+                    <div class='content'>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+
+                
+                <li class='work'>
+                    <input class='radio' id='work15' name='works' type='radio'>
+                    <div class="relative">
+                        <label for='work15'>💯 COMP0022 Exam<br>💯 COMP0070 Exam</label>
+                        <span class='date'>2021.05.01</span>
                         <span class='circle'></span>
                     </div>
                     <div class='content'>
