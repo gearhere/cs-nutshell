@@ -93,6 +93,10 @@ div {
     background-color: rgb(161, 167, 156);
 }
 
+.proj {
+    background-color: whitesmoke;
+}
+
 a {
     color:rgb(8, 67, 85);
     text-decoration: none;
