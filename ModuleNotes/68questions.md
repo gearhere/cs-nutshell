@@ -20,6 +20,8 @@ an overview of the sequence of operations the computer executes at start-up and 
 Q: why do we separate BIOS and CMOS into two chips?
 Q: why do we put os in main memory rather than disk?
 
+
+
 ## Lecture14:
 1. To introduce the notion of a process--a program in execution, which forms the basis of all computation
 - How does a process will be presented in memory(stack, heap, data, text)?
