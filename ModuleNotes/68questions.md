@@ -1,8 +1,9 @@
-## Lecture1:
+quiz: https://chortle.ccsu.edu/AssemblyTutorial/index.html#part7
+
+## Lecture1&2:
 1. Von Neumann Architecture:five major components
-## Lecture2:
-1. How does Fetch-Decode-Execute work?
-2. LMC(https://www.vivaxsolutions.com/web/lmc.aspx): 
+2. How does Fetch-Decode-Execute work?
+3. LMC(https://www.vivaxsolutions.com/web/lmc.aspx): 
 - Insturction set: 1xx,2xx,3xx,5xx,6xx,7xx,8xx,901,902,000,**DAT**
 - example:
     - INP
@@ -10,6 +11,84 @@
     - OUT
     - HLT
     - A    DAT
+
+## Lecture3&4&5:
+1. PCI: plug&play
+2. AGP: graphic cards
+3. External Bus:...
+4. Bit, byte, kb...
+5. Addition&subtraction
+6. X's complement to represent negative numbers
+7. Memory in 8 bits, 
+8. MIPS32: register in 32 bits.
+9. Byte order: big-endian, little-endian
+10. Sign-extension for signed values; zero-extension for unsigned values.
+
+## Lecture 6&7&8
+1. MIPS32: 0-31, PC; load and store from memory; other instruction use register.
+2. R type: opcode-6, rs-5,rt-5,rd-5,shamt-5,func-6.
+    - add,addu,sub,subu,and,or,xor,nor,slt,sltu;
+    - addu, ignores overflow
+    - logical operation: 1 true, 0 false
+    - shift: sll,srl
+3. I type: opcode-6,rs-5,rt-5,imm-16
+    - offset as signed value: support positive & negative addressing.
+    - imm. addiu: u-ignore overflow
+    - branch instruction: why add 4 before adding the constant?
+      - PC->PC+4+0XFFFFABCD*4
+    - load address into register: lui+ori (1234,5678 need to insert twice(32/16))
+    - Branching: beq, rs,rt, Label()
+5. J type(26+2+4):
+    - j target
+    - jal target: j + $31-->PC+4; jr
+6. Assembly directive:
+    - .data: 
+       - .word ....
+    - .text:  
+       - .globl main
+    - more:.asciiz, .space, .bytes, ...
+7. Assembly labels:
+8. Addressing mode:
+    - Register addressing
+    - Immediate addressing: addi
+    - Based addressing: lw
+    - PC-relative addressing: beq
+    - Pseudo-Direct addressing: jump, pc(4)+26+2(00,01,11,10)   
+9.  Bit manipulation: use mask.
+
+## Lecture 9&10
+1. local variables:
+   - addiu, lui+ori, li, addu
+2. arrays:
+   - base address: 0x12345678
+   - lui + ori: $s0
+   - lw $t1, 0($s0)
+   - sll $t1, $t1, 1
+   - sw $t1, 0($s0)
+3. if-else: bne + label
+4. while/for loop: j + label
+5. **Questions**
+   - where to put input/result variables and print? 
+6. Register naming conventions:
+   - result value: $v0, $v1
+   - argument: $a0, $a1, $a2, $a3
+   - return address: $ra
+7. **Stack for nested loops**
+8. system calls
+9. character data:
+   - 0x00, null;(terminates a string)
+10. fixed point representation of real numbers
+   - remember the fraction point
+   - multiplication: 01-1000 * 01-0000 = 01-1000 0000
+11. floating point  
+   - single precision: S(1, sign), E(8,power), F,(23, mantissa)
+     - normalized, cannot represent 0
+   - denormalized:(-1)^s*0.F*2^E+1-Bias
+     - fill the gap between 0 and smallest normalized value
+     - zero, finity, and NaN
+   - floating point unit:
+     - lwc1, $f1, xxx
+     - add.s, add.d(double)
 
 ## Lecture11:
 an overview of the sequence of operations the computer executes at start-up and the main components involved in this phase.
@@ -19,8 +98,6 @@ an overview of the sequence of operations the computer executes at start-up and 
 - Bootstrapping: find MBR with bootloader in it, then launch the os.
 Q: why do we separate BIOS and CMOS into two chips?
 Q: why do we put os in main memory rather than disk?
-
-
 
 ## Lecture14:
 1. To introduce the notion of a process--a program in execution, which forms the basis of all computation
