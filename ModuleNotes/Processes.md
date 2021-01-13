@@ -38,7 +38,7 @@ addresses, local variables)
 
 ==contents of PCB==
 
-Context Switch
+### Context Switch
 
 
 # Process Scheduling
@@ -52,7 +52,7 @@ memory, ready and waiting to execute
 – Device queues – set of processes waiting for an I/O device
 
 ## Schedulers
-- Short-term scheduler (or CPU scheduler)
+- Short-term scheduler (or [[CPU Scheduling#CPU Scheduler]])
 	- selects which process should be executed next and allocates CPU
 	- Sometimes the only scheduler in a system
 	- Short-term scheduler is invoked frequently (milliseconds) -> must be fast
