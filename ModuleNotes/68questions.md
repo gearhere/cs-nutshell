@@ -132,28 +132,30 @@ Q: why do we put os in main memory rather than disk?
 
 ## Lecture16:
 1. Introduce CPU scheduling, which is the basis for multiprogrammed operating systems
-- what is a cycle of process execution?
-- when do you need to schedule a process? 4 scenarios
-- when is the scheduling preemptive or non-preemptive?
-- what does dispatcher do and what is dispatcher latency?
+- [x] what is a cycle of process execution? A: cpu burst + i/o wait
+- [x] when do you need to schedule a process? A:terminates, running->ready, running->waiting, waiting->ready
+- [x] when is the scheduling preemptive or non-preemptive? A: preemptive 2,4 of above
+- [x] what does dispatcher do and what is dispatcher latency? A: give control to selected process; time from stop one -> start another
 2. To discuss evaluation criteria for selecting a CPU-scheduling algorithm for a particular system
-- what are the scheduling criteria?
-- To what extent should we keep cpu busy?(4-9)?
+- [x] what are the scheduling criteria? A: turnaround time, response time, **waiting time**, cpu utilization, throughput
+- [x] To what extent should we keep cpu busy? A: 40%-90%
 3. To describe various CPU-scheduling algorithms
-- what is FCFS and what is the convoy effect?
-- what is SJF(nonpreemptive)and how to predict the length of next CPU burst? what is exponential averaging?
+- [x] what is FCFS and what is the convoy effect? A: short process behind long process.
+- [x] what is SJF(nonpreemptive)and how to predict the length of next CPU burst? A: using the length of previous cpu burst
+- [x] what is exponential averaging? A: 1/2*previous predict + 1/2*previous real
 - **Example of preemptive SJF**
-- what is the problem with Priority Scheduling and solution to that?(starvation)
-- what is Round Robin and what consideration should be taken into account for setting a q(time quantum)?
-- How does accounting time of process will help determine optimal q?
-- what is multilevel queue scheduling and how to improve it with feedback?
-- why study all the algorithms rather than the best one?different computing environment
+- [x] what is the problem with Priority Scheduling and solution to that?(Starvation) A: Aging(increase priority as time passing)
+- [x] what is Round Robin and what consideration should be taken into account for setting a q(time quantum)? A: not too large, large enough to context switch time.
+- [x] How does accounting time of process will help determine optimal q? A: **OS record and analyse the time of previous process.**
+- [x] what is multilevel queue scheduling and how to improve it with feedback? A: Different queues; **a process can move between queue.**
+- [x] why study all the algorithms rather than the best one? A: different computing environment(watch, phone...).
 4. To examine the scheduling algorithms of some operating systems
-- what is the algo in windows?
+- [x] what is the algo in windows? A: priority based multilevel feedback queue scheduling
+- [x] what happens when there is no process to run? A: system run idle process to increase time of use.
 
 Summary: 
 - two main factors: number of queues and algo for each of them
-- use historical data to determine optimal solution
+- use **historical data** to determine optimal solution
 
 ## Lecture17:
 • To provide a detailed description of various ways of organising memory.
