@@ -180,7 +180,7 @@ top: 50%;
 margin-top: -17px;
 }
 .content p {
-max-height: 0;
+max-height: 10;
 color: transparent;
 text-align: justify;
 word-break: break-word;
@@ -211,7 +211,7 @@ background: #f98262;
 .radio:checked ~ .content {
 max-height: 180px;
 border-color: #eee9dc;
-margin-right: 10%;
+margin-right: 1%;
 transform: translateX(20px);
 transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
